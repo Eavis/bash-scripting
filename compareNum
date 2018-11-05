@@ -44,5 +44,12 @@ else
  echo a is greater than d
 fi 
 
+let a++
+echo "number a is now: $a"
+
+let b+=10
+echo "number b is now: $b"
+
+
 
 
