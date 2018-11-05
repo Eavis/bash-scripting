@@ -1,0 +1,48 @@
+#! /bin/bash
+# 05/11/2018
+
+echo "compareNum"
+
+#numeric variables
+a=100
+b=100
+c=200
+d=300
+
+echo a=$a b=$b c=$c d=$d
+ #-gt greater than
+ #-lt less than
+ #-ge greater or equal to
+ #-le less than or equal to
+
+ #-eq equals to
+ #-ne not equal
+ #! negation operator
+
+#conditional tests
+if [ $a -eq $b ]; then
+ echo a equals b
+else
+ echo a does not equal to b
+fi
+
+if [ $b -gt $c ]; then  
+ echo b greater than c
+else 
+ echo b smaller than c
+fi 
+
+if [ $a -ge $b ]; then
+ echo a greater or equal than b
+else 
+ echo a smaller than b
+fi
+
+if [ ! $a -lt $d ]; then
+ echo a is not less than d
+else 
+ echo a is greater than d
+fi 
+
+
+
