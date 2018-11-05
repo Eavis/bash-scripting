@@ -1,0 +1,46 @@
+#!/bin/bash
+#05/09/2018
+
+echo "myChap2_compareString"
+#String variables
+str1="Hello"
+str2="World"
+str3="Eavis"
+str4="Robotics Engineer"
+str5="A"
+str6="B"
+echo str1=$str1 str2=$str2 str3=$str3 str4=$str4
+if [ "$str1" = "$str2" ] ; then
+ echo str1 equals str2
+else
+ echo str1 does not equal to str2
+fi
+
+if [ "$str1" != "$str2" ]; then
+ echo str1 does not equal str2
+else 
+ echo str1 equals str2
+fi
+
+echo str5=$str5 str6=$str6
+
+if [ "$str5" \> "$str6" ]; then  ### need escape character for > and <
+ echo str5 greater than str6
+else 
+ echo str5 smaller than str6
+fi
+
+if [[ "$str5" > "str6" ]]; then   ## or use double brackets for comapre
+ echo str5 greater than str6
+else 
+ echo str5 is smaller than str6
+fi
+
+if [ -n "$str1" ]; then    # test if string is not null
+ echo str1 is not null
+fi
+
+if [ -z "$str7" ]; then   # test if str is null
+ echo str7 is null
+fi
+
