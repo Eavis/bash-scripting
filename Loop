@@ -1,0 +1,23 @@
+#!/bin/bash
+#05/11/2018
+echo "Script for Loop"
+x=1
+while [ $x -le 10 ]
+do
+ echo x: $x
+ let x++
+done
+
+echo "End of part1"
+
+echo "second part"
+x=1
+while [$x -le 0]
+do 
+ echo x: $x
+ mkdir folder$x
+ let x++
+done
+echo "End of script2"
+
+
