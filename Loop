@@ -43,7 +43,4 @@ do
  echo "x: $x"
  let x++
 done
-
-echo "End of script6"
-
 exit 0
