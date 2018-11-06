@@ -12,7 +12,7 @@ echo "End of part1"
 
 echo "second part"
 x=1
-while [$x -le 0]
+while [$x -le 0]         # perform the loop while the condition is true
 do 
  echo x: $x
  mkdir folder$x
@@ -35,4 +35,15 @@ do
  echo ""
  let row++
 done
+exit 0
+
+x=1
+until [ $x -gt 10 ]          # perform the loop until the condition is true
+do                           
+ echo "x: $x"
+ let x++
+done
+
+echo "End of script6"
+
 exit 0
