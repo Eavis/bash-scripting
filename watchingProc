@@ -1,0 +1,21 @@
+#!/bin/bash
+#06/11/2018
+
+if [ $# -ne 1 ]; then
+ echo "Usage: script process/directory"
+ echo "For example: script /proc/20686"
+ exit 255
+fi
+
+FN=$1
+rc=1
+while [ $rc -eq 1 ]
+do 
+ if [ ! -d $FN ]; then 
+  echo "Process $FN is not running or has been terminated"
+  let rc=0
+ else 
+  sleep 1
+ fi
+done
+exit 0
