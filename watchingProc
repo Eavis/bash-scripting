@@ -19,3 +19,5 @@ do
  fi
 done
 exit 0
+
+##ps auwx |grep bash
