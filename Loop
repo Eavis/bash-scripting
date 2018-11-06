@@ -21,3 +21,18 @@ done
 echo "End of script2"
 
 
+tput clear
+echo "Nested Loop"
+row=1
+while [ $row -le 20 ]
+do 
+ col=1
+ while [ $col -le 20 ]
+ do 
+   echo -n "#"
+   let col++
+ done 
+ echo ""
+ let row++
+done
+exit 0
